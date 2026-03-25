@@ -1,1 +1,44 @@
  /* Dynamic Promo Bar & Cart Simulation - Styles  */
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#promo-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 48px;
+  min-height: 48px;
+}
+
+#promo-bar.hidden {
+  display: none;
+}
+
+#promo-message {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#close-btn {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#close-btn:hover {
+  opacity: 1;
+}
